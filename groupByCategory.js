@@ -1,14 +1,11 @@
 function groupByCategory(transactions) {
-  let categories = {}
+  let categories ={}
 
   for(let transaction of transactions){
-
     if(!categories[transaction.category]){
-        categories[transaction.category] = [] 
+      categories[transaction.category] = []
     }
-    else{
-        categories[transaction.category].push(transaction)
-    }
+      categories[transaction.category].push(transaction)
   }
   return categories
 }
