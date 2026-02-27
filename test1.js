@@ -3,10 +3,10 @@ function hasPair(arr, target){
 
     for(let num of arr ){
         let complement = target - num
-        if(!seen[complement]){
-            seen[num] = true
+        if(seen[complement] !== undefined){
+            return true
         }
-        return true
-
+            seen[num] = true
     }
+    return false
 }
