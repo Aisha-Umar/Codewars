@@ -3,12 +3,13 @@ function nonRepeating(str){
     let count ={}
 
     for(let char of str){
-        count[char] = count[char] || 0 + 1
+        count[char] = (count[char] || 0) + 1
     }
-    for(let ch of str){
-        if(count[ch]===1){
-            return str.indexOf(ch)
+    for(let i=0; i<=str.length-1; i++){
+        if(count[str[i]] === 1){
+            return i
         }
     }
+    
     return -1
 }
