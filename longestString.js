@@ -17,8 +17,8 @@ function longestString(s){
     //else if char is repeating, check in the Set
     //doing start++
     // then end++
+   //for loop with end = 0
 
-
-
+   
 
 }
